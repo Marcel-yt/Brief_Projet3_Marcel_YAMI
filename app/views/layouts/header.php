@@ -11,9 +11,10 @@
         <div class="container mx-auto flex justify-between items-center px-10">
             <h1 class="text-xl font-bold">Système de gestion des utilisateurs</h1>
             <nav>
-                <ul class="flex space-x-4">
+                <ul class="flex space-x-4 items-center">
                     <li><a href="/php-mvc-user-management/public/index.php" class="hover:underline">Accueil</a></li>
                     <?php if (isset($_SESSION['user_id'])): ?>
+                        <li><span class="text-gray-200">Bienvenue, <?php echo htmlspecialchars($_SESSION['username'] ?? 'Utilisateur'); ?></span></li>
                         <li><a href="/php-mvc-user-management/app/views/auth/logout.php" class="hover:underline">Déconnexion</a></li>
                     <?php else: ?>
                         <li><a href="/php-mvc-user-management/app/views/auth/login.php" class="hover:underline">Connexion</a></li>

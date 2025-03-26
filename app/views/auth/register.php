@@ -22,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php include '../layouts/header.php'; ?>
 
 <main class="container mx-auto p-4 ">
-    <h2 class="text-2xl font-bold mb-4 ">Inscription</h2>
-    <form action="register.php" method="POST" class="bg-white p-6 rounded shadow-md">
+    <h2 class="text-2xl font-bold mb-4 text-center ">Inscription</h2>
+    <form action="register.php" method="POST" class="bg-white p-6 rounded shadow-md max-w-md mx-auto">
         <div class="mb-4">
             <label for="username" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
             <input type="text" name="username" id="username" class="mt-1 block w-full border" required>
