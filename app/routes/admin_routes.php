@@ -6,6 +6,12 @@ $action = $_GET['action'] ?? '';
 $admin = new AdminController();
 
 switch($action) {
+    case 'showCreateUser':
+        $admin->showCreateUser();
+        break;
+    case 'createUser':
+        $admin->createUser();
+        break;
     case 'edit':
         $admin->editUser();
         break;

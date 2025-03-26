@@ -27,6 +27,12 @@ $sessions = $stmt->fetchAll();
 
 <main class="container mx-auto p-4">
     <h2 class="text-2xl font-bold mb-4">Dashboard Administrateur</h2>
+
+    <a href="/php-mvc-user-management/app/routes/admin_routes.php?action=showCreateUser" 
+           class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded inline-block mb-4">
+           Créer un utilisateur
+        </a>
+
     <h3 class="text-xl font-bold mt-4">Utilisateurs enregistrés</h3>
     <table class="min-w-full bg-white">
         <thead>
